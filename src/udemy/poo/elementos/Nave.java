@@ -68,7 +68,7 @@ public class Nave implements Actions {
     @Override
     public void pintar(Graphics2D g) {
         g.drawImage(imagen, x, y, null);
-        g.drawRect(x, y, imagen.getWidth(componente), imagen.getHeight(componente));
+        //g.drawRect(x, y, imagen.getWidth(componente), imagen.getHeight(componente));
         g.drawOval(puntaX, puntaY, 4, 4);
     }
 
