@@ -14,6 +14,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import udemy.poo.interfaz.Actions;
 import udemy.poo.modelo.Burbuja;
+import udemy.poo.sonido.EfectosDeMusica;
 
 /**
  *
@@ -146,7 +147,9 @@ public class Nave implements Actions {
             if (distancia <= 20) {
                 elemento.setEliminar(true);
                 elemento.setWhoDeleted("nave");
-                // Efectos de Música
+                EfectosDeMusica sound = new EfectosDeMusica("burbuja.mp3");
+                Thread hilo = new Thread(sound);
+                hilo.start();
             }
         }
         
