@@ -1,5 +1,5 @@
-/build
-/dist
-/jar
-/nbproject
-/test
+/build/
+/dist/
+/jar/
+/nbproject/
+/test/
